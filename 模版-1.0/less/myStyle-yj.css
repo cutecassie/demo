@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+}
+#YJ a{
+    text-decoration: none;
+    font-family:"微软雅黑";
+    font-size:14px;
+}
+#YJ,#YJ a{
+    color: white;
+}
+#YJ #nav{
+    height:600px;
+    background-image: linear-gradient(-180deg, #1a1454 0%, #0e81a5 100%) ;
+    position: relative;
+}
+
+#YJ .navbar-default {
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid hsla(0,0%,100%,.15);
+}
+#YJ .navbar {
+    margin-bottom: 0;
+}
+.navbar{
+    position: relative;
+   height: 41px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+/*左上角logo*/
+#YJ #nav1 .navbar-brand{
+    display: inline-block;
+    margin:0;
+    height:41px;
+    width:80px;
+    background: url(../img/header-yj/TB16hl5LpXXXXXRXVXXXXXXXXXX-198-46.png) no-repeat center;
+    background-size:contain;
+}
+#YJ #nav1 .navbar-brand img{
+    width:80px;
+    position: absolute;
+    left:15px;
+    top:12px;
+}
+#YJ #nav1 .navbar {;
+    min-height: 41px;
+}
+/*右边搜索框*/
+#YJ #nav1 .navbar-right li>a{
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+#YJ #nav1 .navbar-right form>input{
+    background-color:rgba(225,225,225,.2);
+    border:none;
+    height:26px;
+    width:188px;
+}
+#YJ #nav1 .navbar-right form i{
+    position: absolute;
+    right:6px;
+    top:3px;
+    font-size:12px;
+    color:#ccc;
+}
+#YJ #nav1 .navbar-right .navbar-form div{
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    right:0;
+    top:5px;
+    border-left:1px solid #737373;
+}
+#YJ #nav1 .navbar-right .navbar-form{
+    margin-right:0;
+    padding-right:0;
+    position: relative;
+}
+#YJ #nav1 .navbar-right .blue,#nav2 .navbar-left .blue,#nav2 .Leftnav1 .blue{
+    color: #00a2ca;
+}
+/*第二行导航*/
+#nav2 .navbar,#nav2 .navbar-brand{
+    height:61px;
+}
+#nav2 .navbar-left{
+    position: relative;
+}
+#nav2 .navbar-left li>a,#nav2 .navbar-brand,#nav2 .navbar-right li>a{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#nav2 .navbar-left .line{
+    position: absolute;
+    bottom:0;
+    height:5px;
+    background-color: #00c1de;
+    transition:all 0.3s;
+}/*hover时移动的线，通过改变其left值，发生移动*/
+#nav2 .navbar .navbar-right{
+    float:right;
+    background-color: #00c1de;
+    padding:0 32px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#nav2 .bgBlue{
+    background-color:#00c1de;
+}
+#nav2 .navbar div>div:nth-child(2){
+    /*border:1px solid red;*/
+}/*?好奇怪啊，如果不给navbar-brand右边加边框，“免费注册”就无法居于屏幕右侧，why?*/
+.hotIcon{
+    position: absolute;
+    top:8px;
+    left:55px;
+    width:24px;
+}
+#nav2 .Leftnav1{
+    width:180px;
+    height:680px;
+    position: absolute;
+    top:100%;
+    left:0;
+    z-index: 100;
+}
+#nav2 .Leftnav1,{
+    background-color: #333;
+}
+#nav2 .Leftnav1 ul>li{
+    padding-top:10px;
+    margin:0;
+}
+#nav2 .Leftnav1 ul>li>a{
+    display: inline-block;
+    padding:6px 20px;
+    width:100%;
+    margin:0 auto;
+}
+#nav2 .Leftnav1 ul>li>a>i{
+    float: right;
+}
+#nav2 .Leftnav1 ul hr{
+    width:80%;
+    margin:10px auto 0;
+}
+#nav2 .Leftnav1 div{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+}
+/*左侧2级导航*/
+#nav2 .Leftnav1>ul>li:first-child>ul{
+    background-color: yellow;
+    position: absolute;
+    left:280px;
+    top:0;
+    width:180px;
+}
+/*header菜单*/
+#menu_yj{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    box-sizing: border-box;
+    background-color:rgb(39, 134, 168)
+}
+#menu_yj ul li{
+
+}
+#menu_yj ul li img{
+    width:32px;
+    vertical-align:middle;
+    padding-bottom:25px;
+
+}
+#menu_yj ul li a{
+    display: inline-block;
+    width:100%;
+    height:100px;
+    line-height:100px;
+    text-align: center;
+    margin:0;
+    border-left:1px solid rgba(51, 147, 178,1);
+    border-right:1px solid rgba(51, 147, 178,1);
+}
+#menu_yj ul li h2{
+    font-size:16px;
+    font-weight:bold;
+    display: inline-block;
+    line-height:20px;
+    text-align: left;
+    padding-left:15px;
+    padding-top:10px;
+}
+#menu_yj ul li h2 span{
+    font-size:13px;
+    font-weight:normal;
+}
+#menu_yj .list-inline > li {
+    padding-right: 0;
+    padding-left: 0;
+}
+#nav .bgHover, #nav1 .bgHover,#nav2 .bgHover{
+    background-color: #333;
+}
